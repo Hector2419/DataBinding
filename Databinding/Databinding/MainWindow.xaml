@@ -1,0 +1,15 @@
+﻿<Window x:Class="Databinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Databinding"
+        mc:Ignorable="d"
+        Title="ImagenesXAML" Height="649.75" Width="721.25">
+    <Grid x:Name="bt" Margin="0,0,2,138">
+        <Image Source="fotos/i.jpg" Stretch="UniformToFill" Margin="-59,0,-81,-132"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="605,159,0,0" VerticalAlignment="Top" Width="69" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="99" Margin="581,55,0,0" VerticalAlignment="Top" Width="120" Source="fotos/t.jpg"/>
+
+    </Grid>
+</Window>
