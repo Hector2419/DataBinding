@@ -1,0 +1,22 @@
+﻿<Window x:Class="_21.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_21"
+        mc:Ignorable="d"
+        Title="Datos con data binding" Height="450" Width="800">
+    <StackPanel>
+        <ComboBox Name="Combobox" Margin="50" Width="100">
+            <ComboBoxItem Content="Green"/>
+            <ComboBoxItem Content="Yellow" IsSelected="True"/>
+            <ComboBoxItem Content="Orange"/>
+        </ComboBox>
+        <TextBox Name="textbox"  Margin="50" Width="100" Height="23" VerticalAlignment="Top" 
+                 Text="{Binding ElementName=Combobox, Path=SelectedItem.Content, Mode=TwoWay,
+            UpdateSourceTrigger=PropertyChanged}" Background="{Binding ElementName=Combobox,
+            Path=SelectedItem.Content}">
+
+        </TextBox>
+    </StackPanel>
+</Window>
